@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Extensa</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .services, .portfolio, .contact {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service, .project {
+            background-color: #fafafa;
+            margin: 15px;
+            padding: 20px;
+            border-radius: 8px;
+            width: 30%;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .service h3, .project h3 {
+            color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .service, .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Web Extensa</h1>
+        <p>Descubre más sobre mis proyectos y servicios.</p>
+    </header>
+
+    <nav>
+        <a href="#intro">Inicio</a>
+        <a href="#services">Servicios</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <section id="intro">
+        <h2>Introducción</h2>
+        <p>¡Hola! Soy un apasionado desarrollador web con años de experiencia en la creación de sitios web modernos y funcionales. Mi objetivo es ofrecer soluciones a medida para empresas y particulares, ayudándoles a destacar en la web. A continuación, te invito a descubrir los servicios que ofrezco, mis proyectos anteriores y cómo puedes ponerte en contacto conmigo.</p>
+    </section>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Desarrollo Web</h3>
+                <p>Creación de sitios web modernos, responsivos y optimizados para todo tipo de dispositivos. Utilizo tecnologías como HTML, CSS, JavaScript y frameworks como React.</p>
+            </div>
+            <div class="service">
+                <h3>Consultoría en Marketing Digital</h3>
+                <p>Te ayudo a mejorar tu presencia online mediante estrategias de marketing digital, SEO y gestión de redes sociales.</p>
+            </div>
+            <div class="service">
+                <h3>Diseño UX/UI</h3>
+                <p>Ofrezco servicios de diseño de experiencia de usuario (UX) y de interfaces de usuario (UI) para que tu página sea fácil de usar y atractiva.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Mi Portfolio</h2>
+        <p>A continuación te muestro algunos de los proyectos en los que he trabajado. Cada uno de ellos refleja mi dedicación y esfuerzo por crear soluciones únicas y de calidad.</p>
+        <div class="portfolio">
+            <div class="project">
+                <h3>Proyecto 1 - Sitio Web para Restaurante</h3>
+                <p>Desarrollé un sitio web interactivo para un restaurante local, con un diseño atractivo y funcionalidades como reservas en línea y menú digital.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2 - E-commerce de Ropa</h3>
+                <p>Diseñé y desarrollé una tienda en línea con funcionalidades de carrito de compras, pago seguro y un diseño moderno y minimalista.</p>
+            </div>
+            <div class="project">
+                <h3>Proyecto 3 - Blog Personal</h3>
+                <p>Creé un blog para un cliente con una estructura de posts fáciles de leer, categorizados por temas, y optimizado para SEO.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Si estás interesado en mis servicios o deseas hablar sobre algún proyecto, no dudes en ponerte en contacto conmigo. Estaré encantado de ayudarte.</p>
+        <form action="#" method="post">
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Mensaje:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web Extensa | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
